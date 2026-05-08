@@ -7,16 +7,26 @@ namespace Evaluation_Management
             InitializeComponent();
         }
 
-        private void lblRegisterHere_Click(object sender, EventArgs e)
-        {
-            RegisterForm Form = new RegisterForm();
-            Form.Show();
-            this.Hide();
-        }
 
         private void lblLoginClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            AdminPage Form = new AdminPage();
+            Form.Show();
+            this.Hide();
+        }
+
+        private void lblGoToSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           
+            RegisterForm Form = new RegisterForm();
+            Form.Show();
+            this.Hide();
+            
         }
     }
 }

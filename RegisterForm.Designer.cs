@@ -28,227 +28,301 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label6 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             panel1 = new Panel();
+            panel7 = new Panel();
+            panel6 = new Panel();
             lblRegisterClose = new Label();
-            txtRegisterConfirmPass = new TextBox();
-            label7 = new Label();
-            lblLoginHere = new Label();
+            linkLabel1 = new LinkLabel();
+            label5 = new Label();
             label4 = new Label();
-            CheckBoxRegisterShowPass = new CheckBox();
-            btnSignUp = new Button();
-            txtRegisterPass = new TextBox();
+            panel5 = new Panel();
             label3 = new Label();
-            txtRegisterUsername = new TextBox();
+            textBox3 = new TextBox();
+            CheckBoxRegisterShowPass = new CheckBox();
+            panel3 = new Panel();
             label2 = new Label();
+            textBox1 = new TextBox();
+            panel4 = new Panel();
             label1 = new Label();
-            panel2 = new Panel();
+            textBox2 = new TextBox();
+            btnSignUp = new Button();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            panel7.SuspendLayout();
+            panel6.SuspendLayout();
+            panel5.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = SystemColors.Control;
-            label6.Location = new Point(110, 200);
-            label6.Name = "label6";
-            label6.Size = new Size(95, 20);
-            label6.TabIndex = 0;
-            label6.Text = "TITLE HERE";
             // 
             // panel1
             // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(lblRegisterClose);
-            panel1.Controls.Add(txtRegisterConfirmPass);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(lblLoginHere);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(CheckBoxRegisterShowPass);
-            panel1.Controls.Add(btnSignUp);
-            panel1.Controls.Add(txtRegisterPass);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(txtRegisterUsername);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(panel2);
+            panel1.BackColor = Color.LavenderBlush;
+            panel1.Controls.Add(panel7);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(700, 500);
+            panel1.Size = new Size(715, 435);
             panel1.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            panel7.BackColor = Color.Crimson;
+            panel7.Controls.Add(panel6);
+            panel7.Controls.Add(pictureBox1);
+            panel7.Dock = DockStyle.Fill;
+            panel7.Location = new Point(0, 0);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(715, 435);
+            panel7.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.LavenderBlush;
+            panel6.Controls.Add(lblRegisterClose);
+            panel6.Controls.Add(linkLabel1);
+            panel6.Controls.Add(label5);
+            panel6.Controls.Add(label4);
+            panel6.Controls.Add(panel5);
+            panel6.Controls.Add(CheckBoxRegisterShowPass);
+            panel6.Controls.Add(panel3);
+            panel6.Controls.Add(panel4);
+            panel6.Controls.Add(btnSignUp);
+            panel6.Dock = DockStyle.Fill;
+            panel6.Location = new Point(310, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(405, 435);
+            panel6.TabIndex = 13;
             // 
             // lblRegisterClose
             // 
             lblRegisterClose.AutoSize = true;
             lblRegisterClose.BackColor = Color.Transparent;
             lblRegisterClose.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRegisterClose.Location = new Point(670, 9);
+            lblRegisterClose.Location = new Point(373, 9);
             lblRegisterClose.Name = "lblRegisterClose";
             lblRegisterClose.Size = new Size(20, 20);
             lblRegisterClose.TabIndex = 12;
             lblRegisterClose.Text = "X";
             lblRegisterClose.Click += lblRegisterClose_Click;
             // 
-            // txtRegisterConfirmPass
+            // linkLabel1
             // 
-            txtRegisterConfirmPass.Location = new Point(333, 267);
-            txtRegisterConfirmPass.Multiline = true;
-            txtRegisterConfirmPass.Name = "txtRegisterConfirmPass";
-            txtRegisterConfirmPass.Size = new Size(355, 30);
-            txtRegisterConfirmPass.TabIndex = 11;
+            linkLabel1.AutoSize = true;
+            linkLabel1.LinkColor = SystemColors.WindowFrame;
+            linkLabel1.Location = new Point(54, 293);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(101, 15);
+            linkLabel1.TabIndex = 17;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Login an Account";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
-            // label7
+            // label5
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(333, 243);
-            label7.Name = "label7";
-            label7.Size = new Size(149, 20);
-            label7.TabIndex = 10;
-            label7.Text = "Confirm password:";
-            // 
-            // lblLoginHere
-            // 
-            lblLoginHere.AutoSize = true;
-            lblLoginHere.BackColor = Color.Transparent;
-            lblLoginHere.Font = new Font("Microsoft JhengHei UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLoginHere.Location = new Point(555, 452);
-            lblLoginHere.Name = "lblLoginHere";
-            lblLoginHere.Size = new Size(73, 17);
-            lblLoginHere.TabIndex = 9;
-            lblLoginHere.Text = "Login here";
-            lblLoginHere.Click += lblLoginHere_Click;
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(53, 45);
+            label5.Name = "label5";
+            label5.Size = new Size(98, 23);
+            label5.TabIndex = 16;
+            label5.Text = "TITLE HERE";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Microsoft JhengHei UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(388, 452);
+            label4.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(53, 77);
             label4.Name = "label4";
-            label4.Size = new Size(161, 17);
-            label4.TabIndex = 8;
-            label4.Text = "Already have an account?";
+            label4.Size = new Size(167, 20);
+            label4.TabIndex = 15;
+            label4.Text = "Sign Up your Account";
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.LavenderBlush;
+            panel5.BorderStyle = BorderStyle.FixedSingle;
+            panel5.Controls.Add(label3);
+            panel5.Controls.Add(textBox3);
+            panel5.Location = new Point(54, 243);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(297, 42);
+            panel5.TabIndex = 14;
+            // 
+            // label3
+            // 
+            label3.BackColor = Color.LavenderBlush;
+            label3.Dock = DockStyle.Top;
+            label3.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.WindowFrame;
+            label3.Location = new Point(0, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(295, 17);
+            label3.TabIndex = 2;
+            label3.Text = "Confirm Password:";
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.LavenderBlush;
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.ForeColor = SystemColors.Info;
+            textBox3.Location = new Point(8, 20);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(280, 16);
+            textBox3.TabIndex = 12;
             // 
             // CheckBoxRegisterShowPass
             // 
             CheckBoxRegisterShowPass.AutoSize = true;
             CheckBoxRegisterShowPass.BackColor = Color.Transparent;
             CheckBoxRegisterShowPass.Font = new Font("Microsoft JhengHei UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CheckBoxRegisterShowPass.Location = new Point(569, 331);
+            CheckBoxRegisterShowPass.Location = new Point(229, 291);
             CheckBoxRegisterShowPass.Name = "CheckBoxRegisterShowPass";
             CheckBoxRegisterShowPass.Size = new Size(121, 21);
             CheckBoxRegisterShowPass.TabIndex = 7;
             CheckBoxRegisterShowPass.Text = "Show password";
             CheckBoxRegisterShowPass.UseVisualStyleBackColor = false;
             // 
-            // btnSignUp
+            // panel3
             // 
-            btnSignUp.BackColor = Color.Silver;
-            btnSignUp.FlatAppearance.BorderColor = Color.White;
-            btnSignUp.FlatAppearance.BorderSize = 0;
-            btnSignUp.FlatStyle = FlatStyle.Flat;
-            btnSignUp.Font = new Font("Microsoft JhengHei UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSignUp.ForeColor = SystemColors.ActiveCaptionText;
-            btnSignUp.Location = new Point(333, 357);
-            btnSignUp.Name = "btnSignUp";
-            btnSignUp.Size = new Size(99, 32);
-            btnSignUp.TabIndex = 6;
-            btnSignUp.Text = "SIGN UP";
-            btnSignUp.UseVisualStyleBackColor = false;
-            // 
-            // txtRegisterPass
-            // 
-            txtRegisterPass.Location = new Point(333, 210);
-            txtRegisterPass.Multiline = true;
-            txtRegisterPass.Name = "txtRegisterPass";
-            txtRegisterPass.Size = new Size(355, 30);
-            txtRegisterPass.TabIndex = 5;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(333, 186);
-            label3.Name = "label3";
-            label3.Size = new Size(84, 20);
-            label3.TabIndex = 4;
-            label3.Text = "Password:";
-            // 
-            // txtRegisterUsername
-            // 
-            txtRegisterUsername.Location = new Point(333, 150);
-            txtRegisterUsername.Multiline = true;
-            txtRegisterUsername.Name = "txtRegisterUsername";
-            txtRegisterUsername.Size = new Size(355, 30);
-            txtRegisterUsername.TabIndex = 3;
+            panel3.BackColor = Color.LavenderBlush;
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(textBox1);
+            panel3.Location = new Point(53, 127);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(297, 42);
+            panel3.TabIndex = 13;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(333, 126);
+            label2.BackColor = Color.LavenderBlush;
+            label2.Dock = DockStyle.Top;
+            label2.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.WindowFrame;
+            label2.Location = new Point(0, 0);
             label2.Name = "label2";
-            label2.Size = new Size(90, 20);
+            label2.Size = new Size(295, 17);
             label2.TabIndex = 2;
             label2.Text = "Username:";
             // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.LavenderBlush;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.ForeColor = SystemColors.Info;
+            textBox1.Location = new Point(8, 20);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(280, 16);
+            textBox1.TabIndex = 12;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.LavenderBlush;
+            panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(label1);
+            panel4.Controls.Add(textBox2);
+            panel4.Location = new Point(53, 185);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(297, 42);
+            panel4.TabIndex = 14;
+            // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft JhengHei UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(452, 66);
+            label1.BackColor = Color.LavenderBlush;
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.WindowFrame;
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(127, 26);
-            label1.TabIndex = 1;
-            label1.Text = "Get Started";
+            label1.Size = new Size(295, 17);
+            label1.TabIndex = 2;
+            label1.Text = "Password:";
             // 
-            // panel2
+            // textBox2
             // 
-            panel2.BackColor = Color.Navy;
-            panel2.Controls.Add(label6);
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(315, 511);
-            panel2.TabIndex = 0;
+            textBox2.BackColor = Color.LavenderBlush;
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.ForeColor = SystemColors.Info;
+            textBox2.Location = new Point(8, 20);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(280, 16);
+            textBox2.TabIndex = 12;
+            // 
+            // btnSignUp
+            // 
+            btnSignUp.BackColor = Color.Crimson;
+            btnSignUp.FlatAppearance.BorderColor = Color.White;
+            btnSignUp.FlatAppearance.BorderSize = 0;
+            btnSignUp.FlatStyle = FlatStyle.Flat;
+            btnSignUp.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSignUp.ForeColor = SystemColors.ButtonHighlight;
+            btnSignUp.Location = new Point(54, 337);
+            btnSignUp.Name = "btnSignUp";
+            btnSignUp.Size = new Size(297, 34);
+            btnSignUp.TabIndex = 6;
+            btnSignUp.Text = "SIGN UP";
+            btnSignUp.UseVisualStyleBackColor = false;
+            btnSignUp.Click += btnSignUp_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Left;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(310, 435);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 500);
+            ClientSize = new Size(715, 435);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "RegisterForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RegisterForm";
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Label label6;
         private Panel panel1;
-        private Label lblLoginHere;
-        private Label label4;
-        private CheckBox CheckBoxRegisterShowPass;
-        private Button btnSignUp;
-        private TextBox txtRegisterPass;
-        private Label label3;
-        private TextBox txtRegisterUsername;
-        private Label label2;
-        private Label label1;
-        private Panel panel2;
-        private TextBox txtRegisterConfirmPass;
-        private Label label7;
         private Label lblRegisterClose;
+        private Panel panel7;
+        private PictureBox pictureBox1;
+        private Panel panel6;
+        private LinkLabel linkLabel1;
+        private Label label5;
+        private Label label4;
+        private Panel panel5;
+        private Label label3;
+        private TextBox textBox3;
+        private CheckBox CheckBoxRegisterShowPass;
+        private Panel panel3;
+        private Label label2;
+        private TextBox textBox1;
+        private Panel panel4;
+        private Label label1;
+        private TextBox textBox2;
+        private Button btnSignUp;
     }
 }
