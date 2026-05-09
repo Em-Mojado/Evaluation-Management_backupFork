@@ -15,7 +15,7 @@ namespace Evaluation_Management
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            AdminPage Form = new AdminPage();
+            StaffPage Form = new StaffPage();
             Form.Show();
             this.Hide();
         }
